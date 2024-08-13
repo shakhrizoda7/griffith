@@ -1,0 +1,375 @@
+.container{
+    position: relative;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    top: 400px;
+    left: 20px;
+    z-index: 900;
+}
+.socialIcons div{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.socialIcons div i{
+    font-size: 15px;
+    color: rgb(31, 34, 47);
+}
+
+.headerDiv{
+    width: 100%;
+    height: 400px;
+    background-color: #212429;
+    /* padding: 0 100px; */
+}
+.headerDiv header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #212429;
+}
+header div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    border-bottom: 1px solid white;
+}
+.headerDiv header .logoText{
+    font-size: 30px;
+    color: white;
+}
+.headerDiv header ul{
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+}
+.headerDiv header ul li{
+    list-style: none;
+}
+.headerDiv header ul li a:hover{
+    transition: 0.5s;
+    color: rgb(254, 128, 93);
+}
+
+
+.headerDiv .authorDiv{
+    display: flex;
+    gap: 250px;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+}
+.headerDiv .authorDiv .authorImg{
+    width: 250px;
+    height: auto;
+}
+.headerDiv .authorDiv .authorText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.headerDiv .authorDiv .authorText h1{
+    font-size: 70px;
+    color: rgb(254, 128, 93);
+}
+.headerDiv .authorDiv .authorText p{
+    font-size: 25px;
+    color: white;
+}
+
+.orderSec{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url('https://i.pinimg.com/originals/61/29/d5/6129d52272b91e9897f6ec53997adf63.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.orderSec .newReleaseDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 974px;
+    height: 655px;
+    background-color: black;
+    opacity: 0.7;
+    padding: 30px;
+}
+.orderSec .newReleaseDiv img{
+    width: 385px;
+    height: 543px;
+}
+.orderSec .newReleaseDiv .newReleaseTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px 20px;
+    color: white;
+}
+.orderSec .newReleaseDiv .newReleaseTexts h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+.orderSec .newReleaseDiv .newReleaseTexts p{
+    width: 290px;
+    line-height: 30px;
+}
+.orderSec .newReleaseDiv .newReleaseTexts h3{
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.orderSec .newReleaseDiv .newReleaseTexts .newReleaceBtnDiv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.orderSec .newReleaseDiv .newReleaseTexts .newReleaceBtnDiv button{
+    padding: 10px 20px;
+    border: 1px solid rgb(254, 128, 93);
+    border-radius: 50px;
+    background: transparent;
+    color: rgb(254, 128, 93);
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.orderSec .newReleaseDiv .newReleaseTexts .newReleaceBtnDiv button:hover{
+    background-color: rgb(254, 128, 93);
+    color: black;
+    transform: scale(1.1);
+}
+
+.orderSec .banner{
+    position: absolute;
+    top: 690px;
+    left: 272px;
+    width: 250px;
+    background-color: rgb(254, 128, 93);
+    color: white;
+    padding: 8px 30px 8px 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.commentsSec{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 34, 47);
+    position: relative;
+}
+.commentsSec .bannerImg{
+    width: 50px;
+    position: absolute;
+    margin-left: 1300px;
+}
+.commentsSec .commentTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 150px;
+}
+.commentsSec .commentTexts .reviewsText{
+    color: rgb(254, 128, 93);
+    font-size: 40px;
+    text-align: center;
+    font-family: serif;
+}
+.commentsSec .commentTexts .comments{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(310px, 1fr));
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.commentsSec .commentTexts .comments div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.commentsSec .commentTexts .comments div img{
+    width: 50px;
+}
+.commentsSec .commentTexts .comments div .comment{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+.commentsSec .commentTexts .comments div .commentBy{
+    width: 170px;
+    color: rgb(254, 128, 93);
+    font-family: serif;
+    line-height: 20px;
+    font-size: 17px;
+}
+.commentsSec .commentTexts .comments div .arrow{
+    width: 100px;
+    height: 1px;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+
+.appearances{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #191b22;
+}
+.appearances .appearancesText{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.appearances .appearancesText .appearancesText1{
+    color: rgb(254, 128, 93);
+    font-size: 40px;
+    font-family: serif;
+}
+.appearances .appearancesText .appearancesText2{
+    width: 320px;
+    color: white;
+    line-height: 30px;
+    font-size: 16px;
+}
+.appearances .cards{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(972px, 1fr));
+    row-gap: 50px;
+}
+.appearances .cards .card{
+    width: 972px;
+    height: 295px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 70px;
+}
+.appearances .cards .card p{
+    width: 680px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.appearances .cards .card button{
+    width: 174px;
+    height: 40px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(254, 128, 93);
+    border-radius: 50px;
+    color: rgb(254, 128, 93);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.appearances .cards .card button:hover{
+    background-color: rgb(254, 128, 93);
+    color: black;
+    transform: scale(1.1);
+}
+
+.appearances .byAuthor{
+    width: 1300px;
+    height: 671px;
+    background-color: rgb(31, 34, 47);
+    margin-top: 200px;
+    position: relative;
+}
+.appearances .byAuthor .authorImg{
+    position: absolute;
+    top: -100px;
+    left: 550px;
+    border-radius: 100%;
+    width: 200px;
+}
+.appearances .byAuthor .bannerImg{
+    width: 50px;
+    position: absolute;
+    left: 1200px;
+}
+.appearances .byAuthor .byAuthorText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+}
+.appearances .byAuthor .byAuthorText .authorName{
+    color: rgb(254, 128, 93);
+    font-family: serif;
+    font-size: 40px;
+}
+.appearances .byAuthor .byAuthorText .aboutAuthor{
+    width: 400px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.appearances .byAuthor .byAuthorText button{
+    width: 174px;
+    height: 40px;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid rgb(254, 128, 93);
+    border-radius: 50px;
+    color: rgb(254, 128, 93);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.appearances .byAuthor .byAuthorText button:hover{
+    background-color: rgb(254, 128, 93);
+    color: black;
+    transform: scale(1.1);
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(254, 128, 93);
+}
+footer div{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer div p{
+    font-size: 14px;
+}
